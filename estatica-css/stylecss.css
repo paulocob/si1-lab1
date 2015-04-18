@@ -1,0 +1,30 @@
+h1 {
+  font-family: serif;
+  color: purple;
+  background: orange;
+  }
+
+h2 {
+  font-family: sans-serif;
+  color: red;
+  }
+
+p {
+  font-family: monospace;
+  color: blue;
+  background: yellow;
+}  
+body {
+  padding-left:105px;
+  padding-right:102px;
+  background: gold;
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  }
+
+h3 {
+  font-family: sans-serif;
+  color: red;
+  }
+ 
