@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        padding-left:105px;
+        padding-right:102px;
+        background: #33CCFF;
+      }     
+    </style>
+  	</head>
+
+  	<body>
+      <center>
+      <h1>Sistemas de Informação I - 2015.1</h1>
+    </center>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+                    
+          <div class="nav-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html"> Sobre</a></li>
+              <li><a href="contato.html"> Contato </a></li>
+              <li><a href="formulario.html"> Matrícula</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  		<center>
+  			<h1>Para se matricular na disciplina, preencha o formulário abaixo:</h1>
+  		</center>
+
+  		<form action= "agradecimento.html" method = "POST">
+  		<table style="width:400">
+  			<tr>
+  				<td>
+  					<label for = "nome"> Nome Completo</label>
+  				</td>
+  				<td>
+  					<input type= "text" name = "nome" placeholder="Nome Completo" id="nome" size = "30" maxlength = "30">
+  				</td>
+  			 
+  			</tr>
+  			
+  			<tr>
+  				<td>
+  					<label for = "matricula"> Matricula</label>
+  				</td>
+  				<td>
+  					<input type= "text" name = "matricula" placeholder="1234567890" id="matricula" size = "20" maxlength = "20">
+  				</td>
+  			
+  			</tr>
+
+  			<tr>
+  				<td>
+  					<label for = "nome"> Senha</label>
+  				</td>
+  				<td>
+  					<input type= "password" name = "senha" id="senha" size ="20" maxlength = "20">
+  				</td>
+  			
+  			</tr>
+  		</table>
+
+  			<a href="agradecimento.html"><input type= "submit" value= "Cadastrar" id = "cadastrar" name = "cadastrar"></a>
+  		</form>
+  	</body>
+
+
+</body>
+</html>
