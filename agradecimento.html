@@ -9,6 +9,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
  
   <style>
     body {
@@ -52,55 +53,7 @@
   <br>
   <br>    
 
-  <center><button type="button" class="btn" onClick="window.open('index.html')"><font color = "#473C8B"><b>Voltar para o início</b></font></button></center>
+  <center><h3><a href="index.html">Voltar para o início</a></h3></center>
 
-
-<script type="text/javascript">
-
-var inserirTema = function(tema) {
-  var linha = "<div class='temas temaAprender'>".
-  concat(tema).
-  concat("<input type='image' src='deletar.jpg' id='delete'></input>").
-  concat("<input type='image' src='mover.jpg' id='mover'></input>").
-  concat("</div><div style='clear: both'></div>");  
-$("#aprender").after(linha);
-  
-}
-
-$(document).ready(function(){
-  
-  /* Inserir novo tema na lista de temas a aprender apertando ENTER */
-  $(document).keypress(function(tecla) {
-    if (tecla.which == 13) {
-      var tema = $("#input").val();
-      inserirTema(tema);
-    }
-  });
-  
-  /* Inserir novo tema na lista de temas a aprender clincando no botão Inserir*/
-  $("#inserir").click(function(){
-    var tema = $("#input").val();
-    inserirTema(tema);
-  });
-  
-  /* Deletar um tema da lista de temas a aprender/temas aprendidos */
-  $(document).on("click", "#delete", function(){
-    $(this).parent().fadeOut("fast", function(){
-      $(this).remove();
-    });
-  });
-  
-  /* Mover um tema da lista de temas a aprender para a lista de temas aprendidos */
-  $(document).on("click", "#mover", function(){
-    $("#aprendidos").after($(this).parent());
-    $(this).parent().removeClass("temaAprendido");
-    $(this).parent().addClass("temaAprendido");
-    $(this).remove();
-  
-  });
-  
-});
-
-</script>
 </body>
 </html>
